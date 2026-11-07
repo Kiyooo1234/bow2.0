@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "tapbow",
+	"version": "${version}",
+	"name": "Tap Bow",
+	"description": "Tap right-click with a bow and it releases by itself after a short draw. The arrow is as strong as that draw time allows.",
+	"authors": ["Jan Rhey Cantillas"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.janrhey.tapbow.TapBowClient"],
+		"modmenu": ["dev.janrhey.tapbow.ModMenuIntegration"]
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
